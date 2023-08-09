@@ -9,10 +9,10 @@
 }
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text-color: 255, 255, 255;
   --menu-color: rgba(1, 10, 5, 0.75);
+  --left-btn-image: url("../public/assets/images/joinBtn/mobile_left.svg");
+  --right-btn-image: url("../public/assets/images/joinBtn/mobile_right.svg");
   --hero-image: url("../public/assets/images/home/home.webp");
   --services-image-01: url("../public/assets/images/services/01/bg_servise_mobile_01.webp");
   --services-image-02: url("../public/assets/images/services/02/bg_servise_mobile_02.webp");
@@ -23,6 +23,14 @@
   --light-gradient: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
   --dark-gradient: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
   --input-color: rgba(255, 255, 255, 0.05);
+  --btn-grad: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  --btn-focus-grad: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -56,6 +64,8 @@
 
 @media screen and (min-width: 768px) {
   :root {
+    --left-btn-image: url("../public/assets/images/joinBtn/tablet_left.svg");
+    --right-btn-image: url("../public/assets/images/joinBtn/tablet_right.svg");
     --hero-image: url("../public/assets/images/home/home_tablet.webp");
     --services-image-01: url("../public/assets/images/services/01/bg_servise_tablet_01.webp");
     --services-image-02: url("../public/assets/images/services/02/bg_servise_tablet_02.webp");
@@ -95,6 +105,8 @@
 }
 @media screen and (min-width: 1280px) {
   :root {
+    --left-btn-image: url("../public/assets/images/joinBtn/desctop_left.svg");
+    --right-btn-image: url("../public/assets/images/joinBtn/desctop_right.svg");
     --hero-image: url("../public/assets/images/home/home_desctop.webp");
     --services-image-01: url("../public/assets/images/services/01/bg_servise_desctop_01.webp");
     --services-image-02: url("../public/assets/images/services/02/bg_servise_desctop_02.webp");
@@ -138,5 +150,5 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--text-color));
 }

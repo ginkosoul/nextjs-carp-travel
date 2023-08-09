@@ -9,12 +9,19 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-image": "var(--light-gradient), var(--hero-image)",
+        "btn-join":
+          "var(--left-btn-image), var(--right-btn-image), var(--btn-grad)",
+        "btn-join-focus":
+          "var(--left-btn-image), var(--right-btn-image), var(--btn-focus-grad)",
         "s01-image": "var(--light-gradient), var(--services-image-01)",
         "s02-image": "var(--light-gradient), var(--services-image-02)",
         "s03-image": "var(--light-gradient), var(--services-image-03)",
         "s04-image": "var(--light-gradient), var(--services-image-04)",
         "s05-image": "var(--light-gradient), var(--services-image-05)",
         "contacts-image": "var(--dark-gradient), var(--contacts-image)",
+      },
+      backgroundPosition: {
+        "left-right": "left, right",
       },
       backgroundColor: {
         menu: "var(--menu-color)",

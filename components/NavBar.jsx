@@ -2,18 +2,11 @@
 import { Karantina } from "next/font/google";
 import logo from "@public/assets/icons/logo.svg";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { useState } from "react";
+import { navMenu } from "@constants/navMenu";
 
 const karantina = Karantina({ weight: "400", subsets: ["latin"] });
-
-const navMenu = [
-  { label: "About", link: "#about" },
-  { label: "Services", link: "#services" },
-  { label: "Career", link: "#career" },
-  { label: "Gallery", link: "#gallery" },
-  { label: "Contacts", link: "#contacts" },
-];
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,8 +24,12 @@ function NavBar() {
         {navMenu.map(({ label, link }) => (
           <Link
             key={label}
-            href={link}
-            className="text-sm tracking-widest px-3 py-1.5"
+            to={link}
+            className="text-sm tracking-widest px-3 py-1.5 cursor-pointer"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
           >
             {label}
           </Link>
@@ -61,7 +58,16 @@ function Menu({ onClose }) {
         close
       </button>
       {navMenu.map(({ label, link }) => (
-        <Link key={label} href={link} onClick={onClose}>
+        <Link
+          key={label}
+          to={link}
+          onClick={onClose}
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="cursor-pointer"
+        >
           {label}
         </Link>
       ))}
