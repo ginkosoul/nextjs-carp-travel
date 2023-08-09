@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title {
+    @apply text-[40px] font-thin leading-[1.4] -tracking-[0.04em] uppercase md:text-[67px] md:leading-[1.21] xl:text-[98px];
+  }
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --menu-color: rgba(1, 10, 5, 0.75);
+  --hero-image: url("../public/assets/images/home/home.webp");
+  /* 
+  --about-image: url("../../public/happy-couple-mountains-admires-beautiful-views-man-woman-with-backpacks-mountain-admire-panoramic-view-travelers-enjoy-climbing-mountain-sunset-copy-space\ 1@3x.webp");
+  --services-image: url("../../public/derrick-cooper-L505cPnmIds-unsplash\ 1@3x.webp");
+  --career-image: url("../../public/man-1850181@3x.webp");
+  --contacts-image: url("../../public/contacts/valentin-b-kremer-hUdIY7gXzCo-unsplash\ 1@3x.webp");
+  --test-image: "../../public/contacts/valentin-b-kremer-hUdIY7gXzCo-unsplash\ 1@3x.webp"; */
+  --light-gradient: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
+  --dark-gradient: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
+  --input-color: rgba(255, 255, 255, 0.05);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  :root {
+    --hero-image: url("../public/assets/images/home/home@2x.webp");
+  }
+}
+@media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  :root {
+    --hero-image: url("../public/assets/images/home/home@3x.webp");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --hero-image: url("../public/assets/images/home/home_tablet.webp");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    :root {
+      --hero-image: url("../public/assets/images/home/home_tablet@2x.webp");
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    :root {
+      --hero-image: url("../public/assets/images/home/home_tablet@3x.webp");
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  :root {
+    --hero-image: url("../public/assets/images/home/home_desctop.webp");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    :root {
+      --hero-image: url("../public/assets/images/home/home_desctop@2x.webp");
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    :root {
+      --hero-image: url("../public/assets/images/home/home_desctop@3x.webp");
+    }
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
