@@ -19,23 +19,11 @@
   --services-image-03: url("../public/assets/images/services/03/bg_servise_mobile_03.webp");
   --services-image-04: url("../public/assets/images/services/04/bg_servise_mobile_04.webp");
   --services-image-05: url("../public/assets/images/services/05/bg_servise_mobile_05.webp");
-  /* 
-  --about-image: url("../../public/happy-couple-mountains-admires-beautiful-views-man-woman-with-backpacks-mountain-admire-panoramic-view-travelers-enjoy-climbing-mountain-sunset-copy-space\ 1@3x.webp");
-    --career-image: url("../../public/man-1850181@3x.webp");
-  --contacts-image: url("../../public/contacts/valentin-b-kremer-hUdIY7gXzCo-unsplash\ 1@3x.webp");
-  --test-image: "../../public/contacts/valentin-b-kremer-hUdIY7gXzCo-unsplash\ 1@3x.webp"; */
+  --contacts-image: url("../public/assets/images/contacts/contacts_mobile.webp");
   --light-gradient: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
   --dark-gradient: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
   --input-color: rgba(255, 255, 255, 0.05);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -48,6 +36,7 @@
     --services-image-03: url("../public/assets/images/services/03/bg_servise_mobile_03@2x.webp");
     --services-image-04: url("../public/assets/images/services/04/bg_servise_mobile_04@2x.webp");
     --services-image-05: url("../public/assets/images/services/05/bg_servise_mobile_05@2x.webp");
+    --contacts-image: url("../public/assets/images/contacts/contacts_mobile@2x.webp");
   }
 }
 @media (min-device-pixel-ratio: 3),
@@ -61,6 +50,7 @@
     --services-image-03: url("../public/assets/images/services/03/bg_servise_mobile_03@3x.webp");
     --services-image-04: url("../public/assets/images/services/04/bg_servise_mobile_04@3x.webp");
     --services-image-05: url("../public/assets/images/services/05/bg_servise_mobile_05@3x.webp");
+    --contacts-image: url("../public/assets/images/contacts/contacts_mobile@3x.webp");
   }
 }
 
@@ -72,6 +62,7 @@
     --services-image-03: url("../public/assets/images/services/03/bg_servise_tablet_03.webp");
     --services-image-04: url("../public/assets/images/services/04/bg_servise_tablet_04.webp");
     --services-image-05: url("../public/assets/images/services/05/bg_servise_tablet_05.webp");
+    --contacts-image: url("../public/assets/images/contacts/contacts_tablet.webp");
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -84,6 +75,7 @@
       --services-image-03: url("../public/assets/images/services/03/bg_servise_tablet_03@2x.webp");
       --services-image-04: url("../public/assets/images/services/04/bg_servise_tablet_04@2x.webp");
       --services-image-05: url("../public/assets/images/services/05/bg_servise_tablet_05@2x.webp");
+      --contacts-image: url("../public/assets/images/contacts/contacts_tablet@2x.webp");
     }
   }
   @media (min-device-pixel-ratio: 3),
@@ -97,6 +89,7 @@
       --services-image-03: url("../public/assets/images/services/03/bg_servise_tablet_03@3x.webp");
       --services-image-04: url("../public/assets/images/services/04/bg_servise_tablet_04@3x.webp");
       --services-image-05: url("../public/assets/images/services/05/bg_servise_tablet_05@3x.webp");
+      --contacts-image: url("../public/assets/images/contacts/contacts_tablet@3x.webp");
     }
   }
 }
@@ -108,6 +101,7 @@
     --services-image-03: url("../public/assets/images/services/03/bg_servise_desctop_03.webp");
     --services-image-04: url("../public/assets/images/services/04/bg_servise_desctop_04.webp");
     --services-image-05: url("../public/assets/images/services/05/bg_servise_desctop_05.webp");
+    --contacts-image: url("../public/assets/images/contacts/contacts_desctop.webp");
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -120,6 +114,7 @@
       --services-image-03: url("../public/assets/images/services/03/bg_servise_desctop_03@2x.webp");
       --services-image-04: url("../public/assets/images/services/04/bg_servise_desctop_04@2x.webp");
       --services-image-05: url("../public/assets/images/services/05/bg_servise_desctop_05@2x.webp");
+      --contacts-image: url("../public/assets/images/contacts/contacts_desctop@2x.webp");
     }
   }
   @media (min-device-pixel-ratio: 3),
@@ -133,6 +128,7 @@
       --services-image-03: url("../public/assets/images/services/03/bg_servise_desctop_03@3x.webp");
       --services-image-04: url("../public/assets/images/services/04/bg_servise_desctop_04@3x.webp");
       --services-image-05: url("../public/assets/images/services/05/bg_servise_desctop_05@3x.webp");
+      --contacts-image: url("../public/assets/images/contacts/contacts_desctop@3x.webp");
     }
   }
 }

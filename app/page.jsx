@@ -1,3 +1,4 @@
+import ContactSection from "@components/ContactSection";
 import Hero from "@components/Hero";
 import ServiceSection from "@components/ServiceSection";
 
@@ -6,6 +7,7 @@ function Home() {
     <>
       <Hero />
       <ServiceSection />
+      <ContactSection />
     </>
   );
 }

@@ -14,6 +14,7 @@ module.exports = {
         "s03-image": "var(--light-gradient), var(--services-image-03)",
         "s04-image": "var(--light-gradient), var(--services-image-04)",
         "s05-image": "var(--light-gradient), var(--services-image-05)",
+        "contacts-image": "var(--dark-gradient), var(--contacts-image)",
       },
       backgroundColor: {
         menu: "var(--menu-color)",
