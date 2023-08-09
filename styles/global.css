@@ -14,10 +14,14 @@
   --background-end-rgb: 255, 255, 255;
   --menu-color: rgba(1, 10, 5, 0.75);
   --hero-image: url("../public/assets/images/home/home.webp");
+  --services-image-01: url("../public/assets/images/services/01/bg_servise_mobile_01.webp");
+  --services-image-02: url("../public/assets/images/services/02/bg_servise_mobile_02.webp");
+  --services-image-03: url("../public/assets/images/services/03/bg_servise_mobile_03.webp");
+  --services-image-04: url("../public/assets/images/services/04/bg_servise_mobile_04.webp");
+  --services-image-05: url("../public/assets/images/services/05/bg_servise_mobile_05.webp");
   /* 
   --about-image: url("../../public/happy-couple-mountains-admires-beautiful-views-man-woman-with-backpacks-mountain-admire-panoramic-view-travelers-enjoy-climbing-mountain-sunset-copy-space\ 1@3x.webp");
-  --services-image: url("../../public/derrick-cooper-L505cPnmIds-unsplash\ 1@3x.webp");
-  --career-image: url("../../public/man-1850181@3x.webp");
+    --career-image: url("../../public/man-1850181@3x.webp");
   --contacts-image: url("../../public/contacts/valentin-b-kremer-hUdIY7gXzCo-unsplash\ 1@3x.webp");
   --test-image: "../../public/contacts/valentin-b-kremer-hUdIY7gXzCo-unsplash\ 1@3x.webp"; */
   --light-gradient: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
@@ -39,6 +43,11 @@
   (min-resolution: 2dppx) {
   :root {
     --hero-image: url("../public/assets/images/home/home@2x.webp");
+    --services-image-01: url("../public/assets/images/services/01/bg_servise_mobile_01@2x.webp");
+    --services-image-02: url("../public/assets/images/services/02/bg_servise_mobile_02@2x.webp");
+    --services-image-03: url("../public/assets/images/services/03/bg_servise_mobile_03@2x.webp");
+    --services-image-04: url("../public/assets/images/services/04/bg_servise_mobile_04@2x.webp");
+    --services-image-05: url("../public/assets/images/services/05/bg_servise_mobile_05@2x.webp");
   }
 }
 @media (min-device-pixel-ratio: 3),
@@ -47,12 +56,22 @@
   (min-resolution: 3dppx) {
   :root {
     --hero-image: url("../public/assets/images/home/home@3x.webp");
+    --services-image-01: url("../public/assets/images/services/01/bg_servise_mobile_01@3x.webp");
+    --services-image-02: url("../public/assets/images/services/02/bg_servise_mobile_02@3x.webp");
+    --services-image-03: url("../public/assets/images/services/03/bg_servise_mobile_03@3x.webp");
+    --services-image-04: url("../public/assets/images/services/04/bg_servise_mobile_04@3x.webp");
+    --services-image-05: url("../public/assets/images/services/05/bg_servise_mobile_05@3x.webp");
   }
 }
 
 @media screen and (min-width: 768px) {
   :root {
     --hero-image: url("../public/assets/images/home/home_tablet.webp");
+    --services-image-01: url("../public/assets/images/services/01/bg_servise_tablet_01.webp");
+    --services-image-02: url("../public/assets/images/services/02/bg_servise_tablet_02.webp");
+    --services-image-03: url("../public/assets/images/services/03/bg_servise_tablet_03.webp");
+    --services-image-04: url("../public/assets/images/services/04/bg_servise_tablet_04.webp");
+    --services-image-05: url("../public/assets/images/services/05/bg_servise_tablet_05.webp");
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -60,6 +79,11 @@
     (min-resolution: 2dppx) {
     :root {
       --hero-image: url("../public/assets/images/home/home_tablet@2x.webp");
+      --services-image-01: url("../public/assets/images/services/01/bg_servise_tablet_01@2x.webp");
+      --services-image-02: url("../public/assets/images/services/02/bg_servise_tablet_02@2x.webp");
+      --services-image-03: url("../public/assets/images/services/03/bg_servise_tablet_03@2x.webp");
+      --services-image-04: url("../public/assets/images/services/04/bg_servise_tablet_04@2x.webp");
+      --services-image-05: url("../public/assets/images/services/05/bg_servise_tablet_05@2x.webp");
     }
   }
   @media (min-device-pixel-ratio: 3),
@@ -68,12 +92,22 @@
     (min-resolution: 3dppx) {
     :root {
       --hero-image: url("../public/assets/images/home/home_tablet@3x.webp");
+      --services-image-01: url("../public/assets/images/services/01/bg_servise_tablet_01@3x.webp");
+      --services-image-02: url("../public/assets/images/services/02/bg_servise_tablet_02@3x.webp");
+      --services-image-03: url("../public/assets/images/services/03/bg_servise_tablet_03@3x.webp");
+      --services-image-04: url("../public/assets/images/services/04/bg_servise_tablet_04@3x.webp");
+      --services-image-05: url("../public/assets/images/services/05/bg_servise_tablet_05@3x.webp");
     }
   }
 }
 @media screen and (min-width: 1280px) {
   :root {
     --hero-image: url("../public/assets/images/home/home_desctop.webp");
+    --services-image-01: url("../public/assets/images/services/01/bg_servise_desctop_01.webp");
+    --services-image-02: url("../public/assets/images/services/02/bg_servise_desctop_02.webp");
+    --services-image-03: url("../public/assets/images/services/03/bg_servise_desctop_03.webp");
+    --services-image-04: url("../public/assets/images/services/04/bg_servise_desctop_04.webp");
+    --services-image-05: url("../public/assets/images/services/05/bg_servise_desctop_05.webp");
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -81,6 +115,11 @@
     (min-resolution: 2dppx) {
     :root {
       --hero-image: url("../public/assets/images/home/home_desctop@2x.webp");
+      --services-image-01: url("../public/assets/images/services/01/bg_servise_desctop_01@2x.webp");
+      --services-image-02: url("../public/assets/images/services/02/bg_servise_desctop_02@2x.webp");
+      --services-image-03: url("../public/assets/images/services/03/bg_servise_desctop_03@2x.webp");
+      --services-image-04: url("../public/assets/images/services/04/bg_servise_desctop_04@2x.webp");
+      --services-image-05: url("../public/assets/images/services/05/bg_servise_desctop_05@2x.webp");
     }
   }
   @media (min-device-pixel-ratio: 3),
@@ -89,8 +128,29 @@
     (min-resolution: 3dppx) {
     :root {
       --hero-image: url("../public/assets/images/home/home_desctop@3x.webp");
+      --services-image-01: url("../public/assets/images/services/01/bg_servise_desctop_01@3x.webp");
+      --services-image-02: url("../public/assets/images/services/02/bg_servise_desctop_02@3x.webp");
+      --services-image-03: url("../public/assets/images/services/03/bg_servise_desctop_03@3x.webp");
+      --services-image-04: url("../public/assets/images/services/04/bg_servise_desctop_04@3x.webp");
+      --services-image-05: url("../public/assets/images/services/05/bg_servise_desctop_05@3x.webp");
     }
   }
+}
+
+.my-swiper.swiper {
+  @apply w-56 xl:w-72 h-48 -mt-[calc(100vh-475px)] md:-mt-[calc(100vh-182px)] xl:-mt-[calc(100vh-244px)] md:ml-[calc(50%+131px)] xl:ml-[calc(50%+11px)];
+  @apply uppercase font-extralight text-[20px]/[17px] md:text-[22px]/[18px] xl:text-[28px]/6;
+}
+
+.my-swiper .swiper-wrapper {
+  @apply justify-start;
+}
+
+.my-swiper .swiper-slide {
+  @apply mb-1 h-auto;
+}
+
+.my-swiper .swiper-slide-thumb-active {
 }
 
 body {

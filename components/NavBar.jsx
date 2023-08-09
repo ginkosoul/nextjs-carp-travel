@@ -21,8 +21,8 @@ function NavBar() {
   const toggleMenu = () => setIsMenuOpen((pv) => !pv);
   return (
     <header className="py-9 container flex justify-between items-center">
-      <div className="">
-        <Image src={logo} alt="logo image" width={51} height={21} />
+      <div>
+        <Image src={logo} alt="logo image" width={51} />
         <span className={`${karantina.className} text-sm tracking-[0.125em]`}>
           CarpTravel
         </span>
