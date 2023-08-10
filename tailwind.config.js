@@ -20,6 +20,7 @@ module.exports = {
         "s05-image": "var(--light-gradient), var(--services-image-05)",
         "contacts-image": "var(--dark-gradient), var(--contacts-image)",
         "about-image": "var(--light-gradient), var(--about-image)",
+        "career-image": "var(--dark-gradient), var(--career-image)",
       },
       backgroundPosition: {
         "left-right": "left, right",

@@ -4,7 +4,7 @@ import "swiper/css";
 import { EffectFade } from "swiper/modules";
 import { slides } from "@constants/slides";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 // some trick for tailwind:
 // className="bg-s01-image bg-s02-image bg-s03-image bg-s04-image bg-s05-image"
@@ -15,7 +15,6 @@ const subTitles = slides.map((e) => e.subTitle);
 const length = String(slides.length).padStart(2, "0");
 
 export default function ServiceSection() {
-  console.log("render Service", new Date().getTime());
   const [swiperInstance, setswiperInstance] = useState(null);
 
   return (

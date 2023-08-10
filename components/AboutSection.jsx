@@ -4,6 +4,7 @@ function AboutSection() {
       id="about"
       className="bg-about-image min-h-screen bg-cover bg-center py-14 md:py-16 xl:py-[104px]"
     >
+      {/* Used negative margin. bad practice... */}
       <div className="px-5 mx-auto md:max-xl:px-8 md:max-w-screen-md xl:max-w-screen-xl">
         <h2 className="title uppercase mb-1 md:-mb-[71.5px] xl:-mb-[105.29px]">
           Who <span className="font-medium">we are</span>
@@ -38,7 +39,7 @@ function AboutSection() {
             </p>
           </div>
         </div>
-        <p className="main-text w-[463px] xl:w-[605px] md:ml-auto xl:ml-0 xl:h-20 xl:-mt-20">
+        <p className="main-text w-[463px] xl:w-[605px] md:ml-auto xl:ml-0 xl:h-20 xl:-mt-20 xl:align-text-bottom">
           <span className="font-normal">We use methods </span>
           that are time-tested and proven. Our expert guides with in-depth
           knowledge of the Carpathian landscapes lead you safely through the

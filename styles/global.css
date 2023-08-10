@@ -24,6 +24,7 @@
   --services-image-05: url("../public/assets/images/services/05/bg_servise_mobile_05.webp");
   --contacts-image: url("../public/assets/images/contacts/contacts_mobile.webp");
   --about-image: url("../public/assets/images/about/about_sm.webp");
+  --career-image: url("../public/assets/images/career/career_sm.webp");
   --light-gradient: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
   --dark-gradient: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
   --input-color: rgba(255, 255, 255, 0.05);
@@ -50,6 +51,7 @@
     --services-image-05: url("../public/assets/images/services/05/bg_servise_mobile_05@2x.webp");
     --contacts-image: url("../public/assets/images/contacts/contacts_mobile@2x.webp");
     --about-image: url("../public/assets/images/about/about_sm@2x.webp");
+    --career-image: url("../public/assets/images/career/career_sm@2x.webp");
   }
 }
 @media (min-device-pixel-ratio: 3),
@@ -65,6 +67,7 @@
     --services-image-05: url("../public/assets/images/services/05/bg_servise_mobile_05@3x.webp");
     --contacts-image: url("../public/assets/images/contacts/contacts_mobile@3x.webp");
     --about-image: url("../public/assets/images/about/about_sm@3x.webp");
+    --career-image: url("../public/assets/images/career/career_sm@3x.webp");
   }
 }
 
@@ -80,6 +83,7 @@
     --services-image-05: url("../public/assets/images/services/05/bg_servise_tablet_05.webp");
     --contacts-image: url("../public/assets/images/contacts/contacts_tablet.webp");
     --about-image: url("../public/assets/images/about/about_md.webp");
+    --career-image: url("../public/assets/images/career/career_md.webp");
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -94,6 +98,7 @@
       --services-image-05: url("../public/assets/images/services/05/bg_servise_tablet_05@2x.webp");
       --contacts-image: url("../public/assets/images/contacts/contacts_tablet@2x.webp");
       --about-image: url("../public/assets/images/about/about_md@2x.webp");
+      --career-image: url("../public/assets/images/career/career_md@2x.webp");
     }
   }
   @media (min-device-pixel-ratio: 3),
@@ -109,6 +114,7 @@
       --services-image-05: url("../public/assets/images/services/05/bg_servise_tablet_05@3x.webp");
       --contacts-image: url("../public/assets/images/contacts/contacts_tablet@3x.webp");
       --about-image: url("../public/assets/images/about/about_md@3x.webp");
+      --career-image: url("../public/assets/images/career/career_md@3x.webp");
     }
   }
 }
@@ -124,6 +130,7 @@
     --services-image-05: url("../public/assets/images/services/05/bg_servise_desctop_05.webp");
     --contacts-image: url("../public/assets/images/contacts/contacts_desctop.webp");
     --about-image: url("../public/assets/images/about/about_xl.webp");
+    --career-image: url("../public/assets/images/career/career_xl.webp");
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -138,6 +145,7 @@
       --services-image-05: url("../public/assets/images/services/05/bg_servise_desctop_05@2x.webp");
       --contacts-image: url("../public/assets/images/contacts/contacts_desctop@2x.webp");
       --about-image: url("../public/assets/images/about/about_xl@2x.webp");
+      --career-image: url("../public/assets/images/career/career_xl@2x.webp");
     }
   }
   @media (min-device-pixel-ratio: 3),
@@ -153,6 +161,7 @@
       --services-image-05: url("../public/assets/images/services/05/bg_servise_desctop_05@3x.webp");
       --contacts-image: url("../public/assets/images/contacts/contacts_desctop@3x.webp");
       --about-image: url("../public/assets/images/about/about_xl@3x.webp");
+      --career-image: url("../public/assets/images/career/career_xl@3x.webp");
     }
   }
 }
@@ -160,6 +169,45 @@
 .my-swiper {
   @apply absolute z-[1] w-56 xl:w-72 top-[475px] md:top-[182px] xl:top-[244px] left-[calc(50%-140px)] md:left-[calc(50%+131px)] xl:left-[calc(50%+11px)];
 }
+
+input[type="checkbox"].custom-checkbox {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--input-color);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 2em;
+  min-width: 2em;
+  height: 2em;
+  border: 0.15em solid currentColor;
+  transform: translateY(0.25em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"].custom-checkbox::before {
+  content: "";
+  width: 1.33em;
+  height: 1.33em;
+  transition: 120ms opacity ease-in-out;
+  background-color: #fff;
+  opacity: 0.1;
+}
+
+input[type="checkbox"].custom-checkbox:checked::before {
+  opacity: 1;
+}
+
+/* input[type="checkbox"].custom-checkbox:focus {
+  box-shadow: 0.01em 0.01em 4em #bebebe, -0.01em -0.01em 4em #ffffff;
+} */
 
 body {
   color: rgb(var(--text-color));
