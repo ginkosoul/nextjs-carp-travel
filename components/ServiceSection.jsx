@@ -31,7 +31,7 @@ export default function ServiceSection() {
         {slides.map(({ subTitle, desc, images, className: bg, title }, i) => (
           <SwiperSlide
             key={subTitle}
-            className={`${bg} bg-cover bg-center py-14 md:py-[65px] xl:py-[104px] min-h-screen`}
+            className={`${bg} bg-cover bg-center  py-14 md:py-16 xl:py-[104px] min-h-screen`}
           >
             <div className="container">
               <div className="md:flex mb-4 md:mb-10 xl:mb-5 gap-1 md:gap-5 items-center">

@@ -1,19 +1,8 @@
 "use client";
-import { useEffect } from "react";
 import JoinNowBtn from "./JoinNowBtn";
 import NavBar from "./NavBar";
-import { Events } from "react-scroll";
 
 function Hero() {
-  useEffect(() => {
-    Events.scrollEvent.register("begin");
-    Events.scrollEvent.register("end");
-    return () => {
-      Events.scrollEvent.remove("begin");
-      Events.scrollEvent.remove("end");
-    };
-  }, []);
-
   return (
     <section className="bg-hero-image min-h-screen bg-cover bg-center">
       <NavBar />

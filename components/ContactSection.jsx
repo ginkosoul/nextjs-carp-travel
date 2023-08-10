@@ -14,7 +14,7 @@ function ContactSection() {
   return (
     <section
       id="contacts"
-      className="bg-contacts-image min-h-screen bg-cover bg-center py-14"
+      className="bg-contacts-image min-h-screen bg-cover bg-center py-14 md:py-16 xl:py-[104px]"
     >
       <h2 className="title uppercase mb-9 xl:mb-[71px] container">
         Contact<span className="font-medium"> US</span>
