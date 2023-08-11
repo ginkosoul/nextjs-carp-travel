@@ -26,4 +26,14 @@ export const images = [
     srcset: [image03x3xs, image03x3md, image03x3xl],
     alt: "high angle shot beautiful mountainous landscape with hills cloudy sky",
   },
+  {
+    id: "4",
+    srcset: [image01x3xs, image01x3md, image01x3xl],
+    alt: "breathtaking view - lake high carpathian mountains",
+  },
+  {
+    id: "5",
+    srcset: [image02x3xs, image02x3md, image02x3xl],
+    alt: "River in carpathian mountains[aleksandr paramonov unsplash]",
+  },
 ];
