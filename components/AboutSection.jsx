@@ -39,7 +39,7 @@ function AboutSection() {
             </p>
           </div>
         </div>
-        <p className="main-text w-[463px] xl:w-[605px] md:ml-auto xl:ml-0 xl:h-20 xl:-mt-20 xl:align-text-bottom">
+        <p className="main-text md:w-[463px] xl:w-[605px] md:ml-auto xl:ml-0 xl:h-20 xl:-mt-20 xl:align-text-bottom">
           <span className="font-normal">We use methods </span>
           that are time-tested and proven. Our expert guides with in-depth
           knowledge of the Carpathian landscapes lead you safely through the
