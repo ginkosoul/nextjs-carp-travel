@@ -21,6 +21,7 @@ module.exports = {
         "contacts-image": "var(--dark-gradient), var(--contacts-image)",
         "about-image": "var(--light-gradient), var(--about-image)",
         "career-image": "var(--dark-gradient), var(--career-image)",
+        "gallery-image": "var(--gallery-gradient), var(--gallery-image)",
       },
       backgroundPosition: {
         "left-right": "left, right",
@@ -28,16 +29,6 @@ module.exports = {
       backgroundColor: {
         menu: "var(--menu-color)",
         input: "var(--input-color)",
-      },
-      fontSize: {
-        title: [
-          "2.5rem",
-          {
-            lineHeight: "3.5rem",
-            letterSpacing: "-0.1em",
-            fontWeight: "100",
-          },
-        ],
       },
     },
     container: {

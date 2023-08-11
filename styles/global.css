@@ -25,8 +25,13 @@
   --contacts-image: url("../public/assets/images/contacts/contacts_mobile.webp");
   --about-image: url("../public/assets/images/about/about_sm.webp");
   --career-image: url("../public/assets/images/career/career_sm.webp");
+  --gallery-image: url("../public/assets/images/gallery/bg_gallery_xs.webp");
   --light-gradient: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
   --dark-gradient: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
+  --gallery-gradient: linear-gradient(
+    rgba(2, 15, 8, 0.75),
+    rgba(2, 15, 8, 0.75)
+  );
   --input-color: rgba(255, 255, 255, 0.05);
   --btn-grad: linear-gradient(
     rgba(255, 255, 255, 0.1),
@@ -52,6 +57,7 @@
     --contacts-image: url("../public/assets/images/contacts/contacts_mobile@2x.webp");
     --about-image: url("../public/assets/images/about/about_sm@2x.webp");
     --career-image: url("../public/assets/images/career/career_sm@2x.webp");
+    --gallery-image: url("../public/assets/images/gallery/bg_gallery_xs@2x.webp");
   }
 }
 @media (min-device-pixel-ratio: 3),
@@ -68,11 +74,16 @@
     --contacts-image: url("../public/assets/images/contacts/contacts_mobile@3x.webp");
     --about-image: url("../public/assets/images/about/about_sm@3x.webp");
     --career-image: url("../public/assets/images/career/career_sm@3x.webp");
+    --gallery-image: url("../public/assets/images/gallery/bg_gallery_xs@3x.webp");
   }
 }
 
 @media screen and (min-width: 768px) {
   :root {
+    --gallery-gradient: linear-gradient(
+      rgba(2, 15, 8, 0.85),
+      rgba(2, 15, 8, 0.85)
+    );
     --left-btn-image: url("../public/assets/images/joinBtn/tablet_left.svg");
     --right-btn-image: url("../public/assets/images/joinBtn/tablet_right.svg");
     --hero-image: url("../public/assets/images/home/home_tablet.webp");
@@ -84,6 +95,7 @@
     --contacts-image: url("../public/assets/images/contacts/contacts_tablet.webp");
     --about-image: url("../public/assets/images/about/about_md.webp");
     --career-image: url("../public/assets/images/career/career_md.webp");
+    --gallery-image: url("../public/assets/images/gallery/bg_gallery_md.webp");
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -99,6 +111,7 @@
       --contacts-image: url("../public/assets/images/contacts/contacts_tablet@2x.webp");
       --about-image: url("../public/assets/images/about/about_md@2x.webp");
       --career-image: url("../public/assets/images/career/career_md@2x.webp");
+      --gallery-image: url("../public/assets/images/gallery/bg_gallery_md@2x.webp");
     }
   }
   @media (min-device-pixel-ratio: 3),
@@ -115,6 +128,7 @@
       --contacts-image: url("../public/assets/images/contacts/contacts_tablet@3x.webp");
       --about-image: url("../public/assets/images/about/about_md@3x.webp");
       --career-image: url("../public/assets/images/career/career_md@3x.webp");
+      --gallery-image: url("../public/assets/images/gallery/bg_gallery_md@3x.webp");
     }
   }
 }
@@ -131,6 +145,7 @@
     --contacts-image: url("../public/assets/images/contacts/contacts_desctop.webp");
     --about-image: url("../public/assets/images/about/about_xl.webp");
     --career-image: url("../public/assets/images/career/career_xl.webp");
+    --gallery-image: url("../public/assets/images/gallery/bg_gallery_xl.webp");
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -146,6 +161,7 @@
       --contacts-image: url("../public/assets/images/contacts/contacts_desctop@2x.webp");
       --about-image: url("../public/assets/images/about/about_xl@2x.webp");
       --career-image: url("../public/assets/images/career/career_xl@2x.webp");
+      --gallery-image: url("../public/assets/images/gallery/bg_gallery_xl@2x.webp");
     }
   }
   @media (min-device-pixel-ratio: 3),
@@ -162,6 +178,7 @@
       --contacts-image: url("../public/assets/images/contacts/contacts_desctop@3x.webp");
       --about-image: url("../public/assets/images/about/about_xl@3x.webp");
       --career-image: url("../public/assets/images/career/career_xl@3x.webp");
+      --gallery-image: url("../public/assets/images/gallery/bg_gallery_xl@3x.webp");
     }
   }
 }
@@ -170,14 +187,25 @@
   @apply absolute z-[1] w-56 xl:w-72 top-[475px] md:top-[182px] xl:top-[244px] left-[calc(50%-140px)] md:left-[calc(50%+131px)] xl:left-[calc(50%+11px)];
 }
 
+.gallerySwiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  @apply w-[280px] max-h-[187px] md:w-[415px] md:max-h-[294px] xl:w-[606px] xl:max-h-[429px];
+}
+
+.swiperMd.gallerySwiper {
+  @apply max-md:hidden;
+}
+
+.swiperSm.gallerySwiper {
+  @apply md:hidden;
+}
+
+/* checkbox styles */
 input[type="checkbox"].custom-checkbox {
-  /* Add if not using autoprefixer */
   -webkit-appearance: none;
-  /* Remove most all native input styles */
   appearance: none;
-  /* For iOS < 15 */
   background-color: var(--input-color);
-  /* Not removed via appearance */
   margin: 0;
 
   font: inherit;
@@ -205,10 +233,7 @@ input[type="checkbox"].custom-checkbox:checked::before {
   opacity: 1;
 }
 
-/* input[type="checkbox"].custom-checkbox:focus {
-  box-shadow: 0.01em 0.01em 4em #bebebe, -0.01em -0.01em 4em #ffffff;
-} */
-
+/* default styles */
 body {
   color: rgb(var(--text-color));
 }

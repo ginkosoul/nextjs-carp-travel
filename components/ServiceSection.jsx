@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import "swiper/css";
+import "swiper/css/effect-fade";
 import { EffectFade } from "swiper/modules";
 import { slides } from "@constants/slides";
 import { Swiper, SwiperSlide } from "swiper/react";
